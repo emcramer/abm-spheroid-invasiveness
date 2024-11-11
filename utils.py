@@ -20,9 +20,3 @@ def load_simulation_by_interval(sim_out_dir, interval = 1440, **kwargs):
         return selected_steps
     else:
         print("Provided interval must be larger than the save interval.")
-
-def test():
-    selected = load_simulation_by_interval("../PhysiCell/output/hypothesis2_ics_permuted/1_to_1_random_1/")
-    print(len(selected))
-
-test()
